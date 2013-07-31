@@ -1,0 +1,10 @@
+/* pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; } */
+/* body { font-family: monospace; color: #657b83; background-color: #fdf6e3; } */
+/* * { font-size: 1em; } */
+.htmlItalic { font-style: italic; }
+.Type { color: #b58900; }
+.Identifier { color: #268bd2; }
+.Statement { color: #719e07; }
+.Constant { color: #2aa198; }
+.Title { color: #cb4b16; font-weight: bold; }
+.Special { color: #dc322f; }
