@@ -1,6 +1,52 @@
-/* pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; } */
-/* body { font-family: monospace; color: #657b83; background-color: #fdf6e3; } */
-/* * { font-size: 1em; } */
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Vim Syntax Highlighting */
+pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; }
 .htmlItalic { font-style: italic; }
 .Type { color: #b58900; }
 .Identifier { color: #268bd2; }
@@ -8,3 +54,53 @@
 .Constant { color: #2aa198; }
 .Title { color: #cb4b16; font-weight: bold; }
 .Special { color: #dc322f; }
+.Whitespace {
+  color: rgb(82, 104, 112);
+  background-color: rgb(234, 227, 202);
+}
+
+/* Slides */
+.slide {
+  background-color: #fdf6e3;
+  width: 800px;
+  height: 600px;
+  margin: 50px;
+}
+
+.slide.intro .content {
+  padding: 0 20px;
+  height: 300px;
+  border-bottom: black solid 5px;
+  vertical-align: bottom;
+}
+
+.slide.intro .subcontent {
+  height: 255px ;
+  padding: 20px 60px;
+  background-color: #535353;
+  color: rgb(165, 158, 140);
+  font-size: 2.3em;
+  line-height: 1.2em;
+}
+
+.slide.intro h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #535353;
+  padding: 235px 40px 0;
+}
+
+.slide h2 {
+  color: rgb(224, 206, 174);
+  background-color: #535353;
+  border-bottom: black solid 5px;
+  vertical-align: bottom;
+}
+
+cite {
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 0.5em;
+  font-style: italic;
+}
