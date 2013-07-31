@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Literate CoffeeScript</title>
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=1024" />
+
+  <meta name="description" content="A presentation on Literate CoffeeScript" />
+  <meta name="author" content="Devin Weaver @sukima" />
+  
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <div id="impress">
+
+    <div class="step slide intro" data-x="0" data-y="0">
+      <div id="content">
+        <span class="intro-title">Literate CoffeeScript</span>
+      </div>
+      <div id="subcontent">
+        <q>The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style.</q>
+        <cite>~ Donald Knuth. "Literate Programming (1984)"</cite>
+      </div>
+    </div>
+
+    <div class="step slide normal" data-x="1000" data-y="0">
+      <div class="title">CoffeeScript is just JavaScript<br />
+      Literate CS is just Markdown</div>
+      <div class="content larger">
+      </div>
+    </div>
+
+    <div class="step slide normal" data-x="2000" data-y="0">
+      <div class="title">Markdown First</div>
+      <div class="content">
+<pre>
+<span class="Special">#</span><span class="Title"> Class Definition </span><span class="Special">#</span>
+
+As a markdown document you can establish a dialog with <span class="htmlItalic">*yourself*</span> and other
+coders regarding design, thought process, and gotchas well before the
+implementation takes places.
+</pre>
+      </div>
+    </div>
+
+    <div class="step slide normal" data-x="3000" data-y="0">
+      <div class="title">Inline Documentation</div>
+      <div class="content">
+<pre>
+<span class="Special">#</span><span class="Title"> Class Definition </span><span class="Special">#</span>
+
+As a markdown document you can establish a dialog with <span class="htmlItalic">*yourself*</span> and other
+coders regarding design, thought process, and gotchas well before the
+implementation takes places.
+
+<span class="Special">##</span><span class="Title"> Implementation </span><span class="Special">##</span>
+
+This class describes how this problem could be solved.
+
+    <span class="Statement">class</span> <span class="Constant">Implementation</span>
+      <span class="Identifier">constructor</span><span class="Statement">:</span> <span class="Statement">-&gt;</span> <span class="Identifier">@init</span><span class="Special">()</span>
+</pre>
+      </div>
+    </div>
+
+    <div class="step slide normal" data-x="4000" data-y="0">
+      <div class="title">Organize teh codez</div>
+      <div class="content">
+<pre>
+<span class="Special">##</span><span class="Title"> Implementation </span><span class="Special">##</span>
+
+This class describes how this problem could be solved.
+
+    <span class="Statement">class</span> <span class="Constant">Implementation</span>
+      <span class="Identifier">constructor</span><span class="Statement">:</span> <span class="Statement">-&gt;</span> <span class="Identifier">@init</span><span class="Special">()</span>
+
+<span class="Special">###</span><span class="Title"> init </span><span class="Special">###</span>
+
+A initialization method. <span class="htmlItalic">_This is probubly not the best way to do this._</span>
+
+      <span class="Identifier">init</span><span class="Statement">:</span> <span class="Statement">-&gt;</span> doSomethingAmazing<span class="Special">()</span>
+
+<span class="Special">###</span><span class="Title"> Singleton </span><span class="Special">###</span>
+
+This implementation should be a singleton object.
+
+      instance <span class="Statement">=</span> <span class="Type">null</span>
+      <span class="Identifier">@getInstance</span><span class="Statement">:</span> <span class="Statement">-&gt;</span> instance <span class="Statement">?=</span> <span class="Statement">new</span> <span class="Constant">Implementation</span><span class="Special">()</span>
+</pre>
+      </div>
+    </div>
+
+    <div class="step slide normal" data-x="5000" data-y="0">
+      <div class="title">What I've Learned</div>
+      <div class="content">
+        <ul>
+          <li>Externalizes thought processes</li>
+          <li>Good documentation before code</li>
+          <li>Organizes code for easier refactoring</li>
+          <li>Allows others to review easier</li>
+          <li>I feel like a I code better</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step slide normal" data-x="6000" data-y="0">
+      <div class="title">An Example</div>
+      <div class="content">
+        <ul>
+          <li><a href="https://gist.github.com/sukima/6073227">https://gist.github.com/sukima/6073227</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <script type="text/javascript" src="bower_components/impress.js/js/impress.js"></script> -->
+  <!-- <script type="text/javascript">impress().init();</script> -->
+</body>
+</html>
+
+<!-- vim:set et sw=2: -->
