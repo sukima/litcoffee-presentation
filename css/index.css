@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: "Trebuchet MS", sans-serif;
 }
 ol, ul {
     list-style: none;
@@ -46,7 +47,7 @@ table {
 }
 
 /* Vim Syntax Highlighting */
-pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; }
+pre { font-family: "Ariel", monospace; color: #657b83; background-color: #fdf6e3; }
 .htmlItalic { font-style: italic; }
 .Type { color: #b58900; }
 .Identifier { color: #268bd2; }
@@ -67,11 +68,14 @@ pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; }
   margin: 50px;
 }
 
-.slide.intro .content {
-  padding: 0 20px;
-  height: 300px;
-  border-bottom: black solid 5px;
-  vertical-align: bottom;
+.slide .content {
+  padding: 40px;
+  font-size: 1.1em;
+}
+
+.slide .content.larger {
+  font-size: 2.5em;
+  padding: 120px 50px;
 }
 
 .slide.intro .subcontent {
@@ -83,6 +87,13 @@ pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; }
   line-height: 1.2em;
 }
 
+.slide.intro .title {
+  padding: 0 20px;
+  height: 300px;
+  border-bottom: black solid 5px;
+  vertical-align: bottom;
+}
+
 .slide.intro h1 {
   font-size: 3em;
   font-weight: bold;
@@ -90,17 +101,26 @@ pre { font-family: monospace; color: #657b83; background-color: #fdf6e3; }
   padding: 235px 40px 0;
 }
 
-.slide h2 {
-  color: rgb(224, 206, 174);
-  background-color: #535353;
-  border-bottom: black solid 5px;
-  vertical-align: bottom;
-}
-
-cite {
+.intro cite {
   display: block;
   margin: 0 auto;
   text-align: right;
   font-size: 0.5em;
   font-style: italic;
+}
+
+.slide h2 {
+  color: rgb(224, 206, 174);
+  background-color: #535353;
+  border-bottom: black solid 5px;
+  height: 100px;
+  font-size: 2em;
+  position: relative;
+}
+
+.slide h2>span {
+  margin: 10px 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

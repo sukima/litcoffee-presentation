@@ -15,24 +15,31 @@
   <div id="impress">
 
     <div class="step slide intro" data-x="0" data-y="0">
-      <div id="content">
-        <span class="intro-title">Literate CoffeeScript</span>
+      <div class="title">
+        <h1>Literate CoffeeScript</h1>
       </div>
-      <div id="subcontent">
+      <div class="subcontent">
         <q>The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style.</q>
         <cite>~ Donald Knuth. "Literate Programming (1984)"</cite>
       </div>
     </div>
 
     <div class="step slide normal" data-x="1000" data-y="0">
-      <div class="title">CoffeeScript is just JavaScript<br />
-      Literate CS is just Markdown</div>
+      <h2><span>CoffeeScript is just JavaScript<br />Literate CS is just Markdown</span></h2>
       <div class="content larger">
+<pre>
+<span class="Special">#</span><span class="Title"> Markdown </span><span class="Special">#</span>
+
+Body of documented code
+
+<span class="Whitespace">....</span><span class="Comment"># CoffeeScript Code</span>
+<span class="Whitespace">....</span><span class="Statement">class</span> <span class="Constant">Code</span>
+</pre>
       </div>
     </div>
 
     <div class="step slide normal" data-x="2000" data-y="0">
-      <div class="title">Markdown First</div>
+      <h2><span>Markdown First</span></h2>
       <div class="content">
 <pre>
 <span class="Special">#</span><span class="Title"> Class Definition </span><span class="Special">#</span>
@@ -45,7 +52,7 @@ implementation takes places.
     </div>
 
     <div class="step slide normal" data-x="3000" data-y="0">
-      <div class="title">Inline Documentation</div>
+      <h2><span>Inline Documentation</span></h2>
       <div class="content">
 <pre>
 <span class="Special">#</span><span class="Title"> Class Definition </span><span class="Special">#</span>
@@ -65,9 +72,15 @@ This class describes how this problem could be solved.
     </div>
 
     <div class="step slide normal" data-x="4000" data-y="0">
-      <div class="title">Organize teh codez</div>
+      <h2><span>Organize teh codez</span></h2>
       <div class="content">
 <pre>
+<span class="Special">#</span><span class="Title"> Class Definition </span><span class="Special">#</span>
+
+As a markdown document you can establish a dialog with <span class="htmlItalic">*yourself*</span> and other
+coders regarding design, thought process, and gotchas well before the
+implementation takes places.
+
 <span class="Special">##</span><span class="Title"> Implementation </span><span class="Special">##</span>
 
 This class describes how this problem could be solved.
@@ -92,7 +105,7 @@ This implementation should be a singleton object.
     </div>
 
     <div class="step slide normal" data-x="5000" data-y="0">
-      <div class="title">What I've Learned</div>
+      <h2><span>What I've Learned</span></h2>
       <div class="content">
         <ul>
           <li>Externalizes thought processes</li>
@@ -105,7 +118,7 @@ This implementation should be a singleton object.
     </div>
 
     <div class="step slide normal" data-x="6000" data-y="0">
-      <div class="title">An Example</div>
+      <h2><span>An Example</span></h2>
       <div class="content">
         <ul>
           <li><a href="https://gist.github.com/sukima/6073227">https://gist.github.com/sukima/6073227</a></li>
