@@ -51,6 +51,7 @@ pre {
   font-family: "Ariel", monospace;
   color: #657b83;
   background-color: #fdf6e3;
+  font-size: 0.8em;
   line-height: 1.2em;
 }
 .htmlItalic { font-style: italic; }
@@ -145,6 +146,37 @@ pre {
   font-size: 1.8em;
   line-height: 1.6em;
   margin: 0 40px;
+}
+
+/* Fallbacks */
+.impress-not-supported {
+  width: 100%;
+  text-align: center;
+}
+
+.impress-not-supported .step {
+  margin: 40px auto;
+}
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
 }
 
 /* Hint */
