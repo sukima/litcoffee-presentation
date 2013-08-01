@@ -47,7 +47,12 @@ table {
 }
 
 /* Vim Syntax Highlighting */
-pre { font-family: "Ariel", monospace; color: #657b83; background-color: #fdf6e3; }
+pre {
+  font-family: "Ariel", monospace;
+  color: #657b83;
+  background-color: #fdf6e3;
+  line-height: 1.2em;
+}
 .htmlItalic { font-style: italic; }
 .Type { color: #b58900; }
 .Identifier { color: #268bd2; }
@@ -65,17 +70,17 @@ pre { font-family: "Ariel", monospace; color: #657b83; background-color: #fdf6e3
   background-color: #fdf6e3;
   width: 800px;
   height: 600px;
-  margin: 50px;
 }
 
 .slide .content {
   padding: 40px;
   font-size: 1.1em;
+  width: 720px;
+  height: 420px;
 }
 
 .slide .content.larger {
   font-size: 2.5em;
-  padding: 120px 50px;
 }
 
 .slide.intro .subcontent {
@@ -123,4 +128,21 @@ pre { font-family: "Ariel", monospace; color: #657b83; background-color: #fdf6e3
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.slide .middle {
+  display: table;
+  margin: 0 40px;
+}
+
+.slide .middle>* {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.slide ul {
+  list-style: disc;
+  font-size: 1.8em;
+  line-height: 1.6em;
+  margin: 0 40px;
 }
